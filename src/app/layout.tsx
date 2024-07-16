@@ -13,13 +13,12 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
- <body>
+ <body >
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
             enableSystem
-            disableTransitionOnChange
-          >
+            disableTransitionOnChange>
             {children}
           </ThemeProvider>
         </body>
